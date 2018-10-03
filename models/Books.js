@@ -9,7 +9,7 @@ export default (sequelize, DataType) => {
             type: DataType.STRING,
             allowNull: false,
             validate: {
-                notEmpty: ture
+                notEmpty: true
             }
         }
     });

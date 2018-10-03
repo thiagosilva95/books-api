@@ -32,9 +32,9 @@ export default (app) => {
             models: {}
         };
         database.models = loadModels(sequelize);
-        sequelize.sync().done() => {
+        sequelize.sync().done(() => {
             return database;
-        };
+        });
     }
     return database;
 }
